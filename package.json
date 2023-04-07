@@ -1,0 +1,24 @@
+{
+  "name": "tailwind-travel-lp",
+  "version": "1.0.0",
+  "description": "<img src=\"http://getkirby.com/assets/images/github/plainkit.jpg\" width=\"300\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/styles.css --content './site/**/*.php' -w",
+    "build": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/styles.css --content './site/**/*.php' -m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/presentonline-karel/tailwind-travel-lp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/presentonline-karel/tailwind-travel-lp/issues"
+  },
+  "homepage": "https://github.com/presentonline-karel/tailwind-travel-lp#readme",
+  "dependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
