@@ -9,13 +9,13 @@
     <?= css('assets/css/styles.css') ?>
 </head>
 
-<body>
+<body class="bg-black">
     <div class="md:flex">
         <h1 class="text-prim-100"><?= $page->title() ?></h1>
-        <p class="mt-20 w-64 bg-white shadow rounded-lg">Test</p>
+        <p class="mt-20 w-64 bg-white shadow rounded-xl p-2">Test</p>
 
         <div class="p-24">
-            <h1 class="text-white">Test</h1>
+            <h1 class="text-prim-300">Test</h1>
         </div>
     </div>
 </body>
