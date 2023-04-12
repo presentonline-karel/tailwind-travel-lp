@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./site/**/*.php",
-    "./site/**/**/*.php"
-  ],
+  content: ["./site/**/*.php", "./site/**/**/*.php"],
   theme: {
     extend: {
       colors: {
@@ -29,6 +26,91 @@ module.exports = {
         "neutrals-1100": "#343A40",
         "neutrals-1200": "#232323",
       },
+    },
+    fontFamily: {
+      headings: ["'Josefin Sans', sans-serif"],
+      paragraphs: ["'Cardo', serif"],
+    },
+    letterSpacing: {
+      tighter: "-.02em",
+      tight: "-.01em",
+      normal: "0",
+      wide: ".01em",
+      wider: ".02em",
+    },
+    fontSize: {
+      "12px": [
+        "12px",
+        {
+          lineHeight: "12px",
+          letterSpacing: "-0.02em",
+          fontWeight: "400",
+        },
+      ],
+      "14px": [
+        "14px",
+        {
+          lineHeight: "14px",
+          letterSpacing: "-0.02em",
+          fontWeight: "600",
+        },
+      ],
+      "16px": [
+        "16px",
+        {
+          lineHeight: "26px",
+          letterSpacing: "-0.02em",
+          fontWeight: "400",
+        },
+      ],
+      "20px": [
+        "20px",
+        {
+          lineHeight: "28px",
+          letterSpacing: "-0.02em",
+          fontWeight: "600",
+        },
+      ],
+      "24px": [
+        "24px",
+        {
+          lineHeight: "32px",
+          letterSpacing: "-0.02em",
+          fontWeight: "600",
+        },
+      ],
+      "32px": [
+        "32px",
+        {
+          lineHeight: "36px",
+          letterSpacing: "-0.02em",
+          fontWeight: "600",
+        },
+      ],
+      "40px": [
+        "40px",
+        {
+          lineHeight: "44px",
+          letterSpacing: "-0.02em",
+          fontWeight: "600",
+        },
+      ],
+      "56px": [
+        "56px",
+        {
+          lineHeight: "60px",
+          letterSpacing: "-0.02em",
+          fontWeight: "600",
+        },
+      ],
+      "72px": [
+        "72px",
+        {
+          lineHeight: "72px",
+          letterSpacing: "-0.02em",
+          fontWeight: "600",
+        },
+      ],
     },
   },
   variants: {},

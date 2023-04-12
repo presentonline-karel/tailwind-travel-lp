@@ -55,7 +55,7 @@
 
 
         <!-- Burger -->
-        <div class="Burger / flex flex-col gap-1">
+        <div class="Burger / flex flex-col gap-1 cursor-pointer">
             <div class="Burger-Line / w-6 h-1 bg-neutrals-900 rounded"></div>
             <div class="Burger-Line / w-6 h-1 bg-neutrals-900 rounded"></div>
         </div>
