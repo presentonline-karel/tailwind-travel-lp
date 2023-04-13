@@ -1,8 +1,8 @@
-<nav class="Nav / py-5 px-6">
+<nav class="Nav / py-20px px-24px">
     <div class="Container / flex justify-between items-center">
 
         <!-- Logo -->
-        <a href="<?= $site->url() ?>" class="Logo-Container / w-32" aria-label="Home">
+        <a href="<?= $site->url() ?>" class="Logo-Container / w-[128px]" aria-label="Home">
             <img src="../../../assets/img/Travel-logo.svg" class="Logo / w-full" alt="Travel logo" loading="lazy" />
         </a>
 
@@ -55,9 +55,9 @@
 
 
         <!-- Burger -->
-        <div class="Burger / flex flex-col gap-1 cursor-pointer">
-            <div class="Burger-Line / w-6 h-1 bg-neutrals-900 rounded"></div>
-            <div class="Burger-Line / w-6 h-1 bg-neutrals-900 rounded"></div>
+        <div class="Burger / flex flex-col gap-4px cursor-pointer">
+            <div class="Burger-Line / w-24px h-[3px] bg-neutrals-900 rounded"></div>
+            <div class="Burger-Line / w-24px h-[3px] bg-neutrals-900 rounded"></div>
         </div>
     </div>
 </nav>
