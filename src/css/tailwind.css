@@ -13,6 +13,10 @@
     @apply py-12px px-16px bg-transparent text-prim-600 font-headings font-semibold;
   }
 
+  .btn--white {
+    @apply bg-neutrals-100 text-prim-600 w-full;
+  }
+
 
 
   /* Headings */
