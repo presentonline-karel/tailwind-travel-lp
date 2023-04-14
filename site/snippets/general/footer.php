@@ -77,5 +77,10 @@
                 </div>
             </div>
         </footer>
+
+
+
+        <!-- Scripts -->
+        <?= js("assets/js/nav.js", ["defer" => true]) ?>
     </body>
 </html>

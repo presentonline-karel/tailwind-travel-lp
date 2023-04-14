@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./site/**/*.php", "./site/**/**/*.php"],
+  content: [
+    "./site/**/*.php",
+    "./site/**/**/*.php",
+    "./assets/js/*.js"
+  ],
   theme: {
     extend: {
       colors: {
@@ -27,11 +31,11 @@ module.exports = {
         "neutrals-1200": "#232323",
       },
       boxShadow: {
-        "card": "4px 8px 20px rgba(65, 73, 80, 0.12)",
-      }
+        card: "4px 8px 20px rgba(65, 73, 80, 0.12)",
+      },
     },
     spacing: {
-      "0": "0",
+      0: "0",
       "2px": "2px",
       "4px": "4px",
       "8px": "8px",
@@ -135,12 +139,12 @@ module.exports = {
       wider: ".02em",
     },
     screens: {
-      "sm": "640px",
-      "md": "1024",
-      "lg": "1280",
-      "xl": "1440",
+      sm: "640px",
+      md: "1024",
+      lg: "1280",
+      xl: "1440",
       "2xl": "1600",
-      "hd": "1920px",
+      hd: "1920px",
     },
   },
   variants: {},

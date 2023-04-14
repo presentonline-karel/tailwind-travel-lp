@@ -1,20 +1,26 @@
-<nav class="Nav / py-20px px-24px">
+<nav class="Nav / py-20px px-24px bg-neutrals-100 / dark:bg-neutrals-1000 / sm:py-24px sm:px-48px">
     <div class="Container / flex justify-between items-center">
 
         <!-- Logo -->
         <a href="<?= $site->url() ?>" class="Logo-Container / w-[128px]" aria-label="Home">
-            <img src="../../../assets/img/Travel-logo.svg" class="Logo / w-full" alt="Travel logo" loading="lazy" />
+            <img src="../../../assets/img/Travel-logo.svg" class="Logo / w-full / dark:hidden" alt="Travel logo" loading="lazy" />
+            <img src="../../../assets/img/Travel-logo-white.svg" class="Logo / w-full / dark:block" alt="Travel logo" loading="lazy" />
         </a>
 
 
 
         <!-- Sliding nav -->
-        <div class="Sliding-Nav / translate-x-full w-full absolute top-0 flex flex-col justify-between pt-20px pb-32px bg-prim-100 px-24px h-full">
+        <div class="Sliding-Nav / translate-x-full w-full fixed top-0 flex flex-col justify-between pt-20px pb-32px bg-prim-100 px-24px h-full z-10 transition-all ease-in-out duration-300 / dark:bg-neutrals-1000 / sm:pt-24px sm:pb-40px sm:px-48px">
 
             <!-- Logo -->
-            <a href="<?= $site->url() ?>" class="Logo-Container / " aria-label="Home">
-                <img src="../../../assets/img/Travel-logo.svg" class="Logo /" alt="Travel logo" loading="lazy" />
+            <a href="<?= $site->url() ?>" class="Logo-Container /" aria-label="Home">
+                <img src="../../../assets/img/Travel-logo.svg" class="Logo / w-[128px] / dark:hidden" alt="Travel logo" loading="lazy" />
+                <img src="../../../assets/img/Travel-logo-white.svg" class="Logo / w-[128px] / dark:block" alt="Travel logo" loading="lazy" />
             </a>
+
+            <!-- Burger cross -->
+            <img src="../../../assets/img/Burger-cross-gray.svg" class="Burger-Cross / absolute top-[30px] right-24px / dark:hidden / sm:right-48px" alt="Burger icon" />
+            <img src="../../../assets/img/Burger-cross-white.svg" class="Burger-Cross / absolute top-[30px] right-24px / dark:block / sm:right-48px" alt="Burger icon" />
 
             <!-- Menu items -->
             <ul class="Nav-List / flex flex-col justify-center gap-40px items-center">
@@ -54,10 +60,9 @@
 
 
 
-        <!-- Burger -->
-        <div class="Burger / flex flex-col gap-4px cursor-pointer">
-            <div class="Burger-Line / w-24px h-[3px] bg-neutrals-900 rounded"></div>
-            <div class="Burger-Line / w-24px h-[3px] bg-neutrals-900 rounded"></div>
-        </div>
+        <!-- Burger icon -->
+
+        <img src="../../../assets/img/Burger-icon-gray.svg" class="Burger-Icon / absolute w-24px right-24px / dark:hidden / sm:right-48px" alt="Burger icon" />
+        <img src="../../../assets/img/Burger-icon-white.svg" class="Burger-Icon / absolute w-24px right-24px / dark:block / sm:right-48px" alt="Burger icon" />
     </div>
 </nav>
