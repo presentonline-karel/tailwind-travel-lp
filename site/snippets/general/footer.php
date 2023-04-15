@@ -82,5 +82,6 @@
 
         <!-- Scripts -->
         <?= js("assets/js/nav.js", ["defer" => true]) ?>
+        <?= js("assets/js/dark-mode-toggle.js", ["defer" => true]) ?>
     </body>
 </html>

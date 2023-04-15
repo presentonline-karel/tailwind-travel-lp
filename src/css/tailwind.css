@@ -13,6 +13,10 @@
     @apply py-12px px-16px bg-transparent text-prim-600 font-headings font-semibold;
   }
 
+  .dark .btn--secondary {
+    @apply text-neutrals-100;
+  }
+
   .btn--white {
     @apply bg-neutrals-100 text-prim-600 w-full;
   }
@@ -20,24 +24,32 @@
 
 
   /* Headings */
+  .h {
+    @apply text-neutrals-1000 font-headings;
+  }
+
+  .dark .h {
+    @apply !text-neutrals-100;
+  }
+
   .h1 {
-    @apply mb-20px text-40px text-neutrals-1000 font-headings;
+    @apply mb-20px text-40px;
   }
 
   .h2 {
-    @apply mb-16px text-32px text-neutrals-1000 font-headings;
+    @apply mb-16px text-32px;
   }
 
   .h3 {
-    @apply mb-16px text-24px text-neutrals-1000 font-headings;
+    @apply mb-16px text-24px;
   }
 
   .h4 {
-    @apply mb-12px text-20px text-neutrals-1000 font-headings;
+    @apply mb-12px text-20px;
   }
 
   .h5 {
-    @apply mb-0 text-16px text-neutrals-1000 font-headings;
+    @apply mb-0 text-16px;
   }
 
 
@@ -47,6 +59,10 @@
     @apply text-16px text-neutrals-900 font-paragraphs;
   }
 
+  .dark .p {
+    @apply text-neutrals-300;
+  }
+
 
 
   /* Section defaults */
@@ -54,11 +70,30 @@
     @apply py-72px bg-neutrals-100;
   }
 
+  .dark .section {
+    @apply bg-neutrals-1000;
+  }
+
   .section--colored {
-    @apply rounded-2xl border-y-[0.4px] border-neutrals-400 !bg-neutrals-200;
+    @apply rounded-2xl border-y-[0.4px] border-neutrals-400 bg-neutrals-200;
+  }
+
+  .dark .section--colored {
+    @apply border-neutrals-800 bg-neutrals-900;
   }
 
   .section-label {
     @apply mb-12px text-prim-500 text-14px font-headings;
+  }
+
+  .dark .section-label {
+    @apply text-prim-300;
+  }
+
+
+
+  /* Images */
+  .dark img {
+    @apply brightness-90;
   }
 }

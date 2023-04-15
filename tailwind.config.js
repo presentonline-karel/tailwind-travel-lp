@@ -33,6 +33,10 @@ module.exports = {
       boxShadow: {
         card: "4px 8px 20px rgba(65, 73, 80, 0.12)",
       },
+      aspectRatio: {
+        "5/3": "5 / 3",
+        "3/2": "3 / 2",
+      },
     },
     spacing: {
       0: "0",
@@ -149,4 +153,5 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  darkMode: "class",
 };

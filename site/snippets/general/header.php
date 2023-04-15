@@ -15,4 +15,4 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="Body / bg-neutrals-100 / dark:bg-neutrals-1000">
