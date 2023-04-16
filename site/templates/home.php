@@ -11,8 +11,8 @@
 
         <!-- Hero section -->
         <div class="Hero / pt-32px pb-72px bg-neutrals-100 / dark:bg-neutrals-1000">
-            <div class="Container / flex flex-col px-24px gap-40px / sm:px-48px">
-                <div class="Content /">
+            <div class="Container / flex flex-col px-24px gap-40px / sm:px-48px / md:flex-row md:items-center">
+                <div class="Content / md:w-1/2">
                     <div id="Label-CTAs" class="Label-CTAs / flex items-center gap-4px mb-32px">
                         <a href="#" class="Prim-Label-Link / rounded-full bg-prim-100 py-8px px-12px border border-prim-200 font-semibold text-prim-600 text-16px leading-4 font-headings tracking-tighter / dark:border-neutrals-800 dark:bg-neutrals-800 dark:text-neutrals-100">
                             what's new
@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                <div class="Image-Container / p-8px w-full aspect-square bg-prim-100 border border-prim-200 rounded-2xl shadow-card / dark:bg-neutrals-800 dark:border-neutrals-800">
+                <div class="Image-Container / p-8px w-full aspect-square bg-prim-100 border border-prim-200 rounded-2xl shadow-card / dark:bg-neutrals-800 dark:border-neutrals-800 / md:w-1/2">
                     <img src="../../assets/img/Travel-hero-img.webp" class="Image / aspect-square rounded-2xl object-cover" alt="Travel hero img" loading="lazy" />
                 </div>
             </div>
@@ -44,8 +44,8 @@
 
         <!-- Clients section -->
         <div class="Clients / section section--colored">
-            <div class="Container / flex flex-col px-24px gap-40px / sm:px-48px">
-                <div class="Content /">
+            <div class="Container / flex flex-col px-24px gap-40px / sm:px-48px / md:flex-row">
+                <div class="Content / md:w-1/2">
                     <div class="Header / mb-24px">
                         <div class="section-label">our clients</div>
                         <h3 class="h h3">These companies are counting on us day in, day out.</h3>
@@ -58,10 +58,11 @@
                     </div>
                 </div>
 
-                <div class="Logo-Cloud / grid grid-cols-2 gap-8px / sm:grid-cols-3">
+                <div class="Logo-Cloud / grid grid-cols-2 gap-8px / sm:grid-cols-3 / md:w-1/2 md:gap-16px md:grid-cols-2">
                     <?php for ($i = 0; $i < 6; $i++): ?>
-                        <div class="Logo-Container / bg-prim-100 w-full flex justify-center rounded-lg border-[0.4px] border-neutrals-400 py-20px aspect-5/3 / dark:bg-neutrals-800 dark:border-neutrals-800">
-                            <img src="../../assets/img/Travel-logo.svg" class="Logo / w-[111px]" alt="Logo of brand" loading="lazy" />
+                        <div class="Logo-Container / bg-prim-100 w-full flex justify-center rounded-lg border-[0.4px] border-neutrals-400 py-20px / dark:bg-neutrals-800 dark:border-neutrals-800 / md:aspect-auto">
+                            <img src="../../assets/img/Travel-logo.svg" class="Logo / w-[111px] / dark:hidden / md:w-[96px] " alt="Logo of brand" loading="lazy" />
+                            <img src="../../assets/img/Travel-logo-white.svg" class="Logo / w-[111px] hidden / dark:block / md:w-[96px]" alt="Logo of brand" loading="lazy" />
                         </div>
                     <?php endfor; ?>
                 </div>
@@ -73,28 +74,28 @@
         <!-- Services section -->
         <div class="Services / section">
             <div class="Container / flex flex-col px-24px gap-40px / sm:px-48px">
-                <div class="Content /">
+                <div class="Content / md:max-w-[792px]">
                     <div class="section-label">our services</div>
                     <h2 class="h h2">What solutions do we provide?</h2>
                     <p class="p">Morbi sed pellentesque lectus. Nam varius risus metus, at pulvinar magna bibendum vitae. Aliquam auctor suscipit sem ut aliquet.</p>
                 </div>
 
-                <div class="Services-Cards / flex flex-col gap-24px">
-                    <div class="Card / p-24px rounded-2xl bg-prim-100 / dark:bg-neutrals-800">
+                <div class="Services-Cards / flex flex-col gap-24px / md:flex-row md:items-end">
+                    <div class="Card / p-24px rounded-2xl bg-prim-100 / dark:bg-neutrals-800 / md:w-1/3 md:h-min">
                         <h4 class="h h4">Travel now, and join them</h4>
                         <p class="p / pb-32px">Morbi sed pellentesque lectus. Nam varius risus metus, at pulvinar magna bibendum.</p>
 
                         <h2 class="h h2 / !mb-0 !text-prim-600">250k</h2>
                     </div>
 
-                    <div class="Card / p-24px rounded-2xl bg-prim-500 / dark:bg-neutrals-800">
-                        <h4 class="h h4 !text-neutrals-100">The travel business is absolutely booming</h4>
+                    <div class="Card / p-24px rounded-2xl bg-prim-500 / dark:bg-neutrals-800 / md:w-1/3 md:h-min">
+                        <h4 class="h h4 !text-neutrals-100">Travel now, and you’ll get really happy man. I can promise this to you.</h4>
                         <p class="p / pb-32px !text-neutrals-100">Morbi sed pellentesque lectus. Nam varius risus metus, at pulvinar magna bibendum.</p>
 
                         <h2 class="h h2 / !mb-0 !text-neutrals-100">$8.9 billion</h2>
                     </div>
 
-                    <div class="Card / p-24px rounded-2xl bg-prim-100 / dark:bg-neutrals-800">
+                    <div class="Card / p-24px rounded-2xl bg-prim-100 / dark:bg-neutrals-800 / md:w-1/3 md:h-min">
                         <h4 class="h h4">How many people traveled with our solution</h4>
                         <p class="p / pb-32px">Morbi sed pellentesque lectus. Nam varius risus metus, at pulvinar magna bibendum. What do you mean.</p>
 
@@ -108,19 +109,20 @@
 
         <!-- Faq section -->
         <div class="Faq / section section--colored">
-            <div class="Container / px-24px / sm:px-48px">
-                <h2 class="h h2 / mb-40px">Frequently asked questions</h2>
+            <div class="Container / px-24px / sm:px-48px / md:max-w-[792px] md:mx-auto">
+                <h2 class="h h2 / mb-40px / md:text-center">Frequently asked questions</h2>
 
-                <div class="Faq-Items / mb-40px">
+                <div class="Faq-Items / mb-40px / md:max-w-[588px] md:mx-auto">
                     <?php for ($i = 0; $i < 4; $i++): ?>
-                        <div class="Faq-Item / border-b border-neutrals-400 pb-16px">
-                            <div class="Faq-Header / flex justify-between items-center gap-16px py-16px">
+                        <div class="Faq-Item / border-b border-neutrals-400 transition-all ease-in-out duration-300 / dark:border-neutrals-800">
+                            <div class="Faq-Header / flex justify-between items-center gap-16px py-16px relative">
                                 <h5 class="h h5 /">What actions happen after booking</h5>
-                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                <i class="fa fa-minus / Minus / opacity-0 text-neutrals-1000 absolute right-0 transition-all ease-in-out duration-300 / dark:text-neutrals-100" aria-hidden="true"></i>
+                                <i class="fa fa-plus / Plus / text-neutrals-1000 absolute right-0 transition-all ease-in-out duration-300 / dark:text-neutrals-100" aria-hidden="true"></i>
                             </div>
 
-                            <div class="Faq-Body">
-                                <p class="p">Morbi sed pellentesque lectus. Nam varius risus metus, at pulvinar magna bibendum vitae. Aliquam auctor suscipit sem ut aliquet.</p>
+                            <div class="Faq-Body / transition-all max-h-0 ease-in-out duration-300 overflow-hidden">
+                                <p class="p / h-full opacity-0 transition-all ease-in-out duration-300">Morbi sed pellentesque lectus. Nam varius risus metus, at pulvinar magna bibendum vitae. Aliquam auctor suscipit sem ut aliquet.</p>
                             </div>
                         </div>
                     <?php endfor; ?>
@@ -136,12 +138,12 @@
 
         <!-- CTA section -->
         <div class="CTA / section">
-            <div class="Container / flex flex-col gap-40px bg-prim-100 border border-prim-200 rounded-2xl shadow-card py-56px px-24px mx-24px">
-                <div class="Image-Container / p-8px w-full aspect-square bg-prim-200 border border-prim-300 rounded-2xl shadow-card">
+            <div class="Container / flex flex-col gap-40px bg-prim-100 border border-prim-200 rounded-2xl shadow-card py-56px px-24px mx-24px / dark:bg-neutrals-900 dark:border-neutrals-800 / sm:mx-48px / md:flex-row md:px-56px md:items-center">
+                <div class="Image-Container / p-8px w-full aspect-square bg-prim-200 border border-prim-300 rounded-2xl shadow-card / dark:bg-neutrals-800 dark:border-neutrals-800 / md:h-min md:w-1/2">
                     <img src="../../assets/img/Travel-cta-img.webp" class="Image / aspect-square rounded-2xl object-cover" alt="" loading="lazy" />
                 </div>
 
-                <div class="Content">
+                <div class="Content / md:w-1/2">
                     <div class="Header / mb-24px">
                         <div class="section-label">sign up</div>
                         <h3 class="h h3">Sing up for your amazing holiday today!</h3>
@@ -150,7 +152,7 @@
 
                     <ul class="List / flex flex-col gap-4px mb-32px">
                         <?php for ($i = 0; $i < 4; $i++): ?>
-                            <li class="List-Item / flex gap-8px items-center font-paragraphs text-neutrals-900 text-16px"><i class="fa fa-check-circle / text-prim-600" aria-hidden="true"></i>Competitive holidays</li>
+                            <li class="List-Item / flex gap-8px items-center font-paragraphs text-neutrals-900 text-16px / dark:text-neutrals-300"><i class="fa fa-check-circle / text-prim-600 / dark:text-prim-300" aria-hidden="true"></i>Competitive holidays</li>
                         <?php endfor; ?>
                     </ul>
 
@@ -163,6 +165,11 @@
         </div>
     </main>
 </div>
+
+
+
+<!-- JS Scripts -->
+<?= js("assets/js/faq-accordion.js", ["defer" => true]) ?>
 
 
 

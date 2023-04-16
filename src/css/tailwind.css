@@ -2,98 +2,112 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
+
+@layer base {
+
+    /* Headings */
+    .h {
+        @apply text-neutrals-1000 font-headings;
+    }
+
+    .dark .h {
+        @apply !text-neutrals-100;
+    }
+
+    .h1 {
+        @apply mb-20px text-40px;
+    }
+
+    .h2 {
+        @apply mb-16px text-32px;
+    }
+
+    .h3 {
+        @apply mb-16px text-24px;
+    }
+
+    .h4 {
+        @apply mb-12px text-20px;
+    }
+
+    .h5 {
+        @apply mb-0 text-16px;
+    }
+
+    /* Paragraphs */
+    .p {
+        @apply text-16px text-neutrals-900 font-paragraphs;
+    }
+
+    .dark .p {
+        @apply text-neutrals-300;
+    }
+}
+
+
+
 @layer components {
 
-  /* Buttons */
-  .btn--primary {
-    @apply py-12px px-16px bg-prim-600 text-neutrals-100 rounded-lg font-headings font-semibold;
-  }
+    /* Buttons */
+    .btn--primary {
+        @apply py-12px px-16px bg-prim-600 text-neutrals-100 rounded-lg font-headings font-semibold;
+    }
 
-  .btn--secondary {
-    @apply py-12px px-16px bg-transparent text-prim-600 font-headings font-semibold;
-  }
+    .btn--secondary {
+        @apply py-12px px-16px bg-transparent text-prim-600 font-headings font-semibold;
+    }
 
-  .dark .btn--secondary {
-    @apply text-neutrals-100;
-  }
+    .dark .btn--secondary {
+        @apply text-neutrals-100;
+    }
 
-  .btn--white {
-    @apply bg-neutrals-100 text-prim-600 w-full;
-  }
+    .btn--white {
+        @apply bg-neutrals-100 text-prim-600 w-full;
+    }
 
+    .dark .btn--white {
+        @apply bg-prim-600 text-neutrals-100;
+    }
 
+    /* Section defaults */
+    .section {
+        @apply py-72px bg-neutrals-100;
+    }
 
-  /* Headings */
-  .h {
-    @apply text-neutrals-1000 font-headings;
-  }
+    .dark .section {
+        @apply bg-neutrals-1000;
+    }
 
-  .dark .h {
-    @apply !text-neutrals-100;
-  }
+    .section--colored {
+        @apply rounded-2xl border-y-[0.4px] border-neutrals-400 bg-neutrals-200;
+    }
 
-  .h1 {
-    @apply mb-20px text-40px;
-  }
+    .dark .section--colored {
+        @apply border-neutrals-800 bg-neutrals-900;
+    }
 
-  .h2 {
-    @apply mb-16px text-32px;
-  }
+    /* Others */
+    .section-label {
+        @apply mb-12px text-prim-500 text-14px font-headings;
+    }
 
-  .h3 {
-    @apply mb-16px text-24px;
-  }
-
-  .h4 {
-    @apply mb-12px text-20px;
-  }
-
-  .h5 {
-    @apply mb-0 text-16px;
-  }
-
-
-
-  /* Paragraphs */
-  .p {
-    @apply text-16px text-neutrals-900 font-paragraphs;
-  }
-
-  .dark .p {
-    @apply text-neutrals-300;
-  }
+    .dark .section-label {
+        @apply text-prim-300;
+    }
+}
 
 
 
-  /* Section defaults */
-  .section {
-    @apply py-72px bg-neutrals-100;
-  }
+@layer utilities {
 
-  .dark .section {
-    @apply bg-neutrals-1000;
-  }
+    /* Images */
+    .dark img {
+        @apply brightness-90;
+    }
 
-  .section--colored {
-    @apply rounded-2xl border-y-[0.4px] border-neutrals-400 bg-neutrals-200;
-  }
-
-  .dark .section--colored {
-    @apply border-neutrals-800 bg-neutrals-900;
-  }
-
-  .section-label {
-    @apply mb-12px text-prim-500 text-14px font-headings;
-  }
-
-  .dark .section-label {
-    @apply text-prim-300;
-  }
-
-
-
-  /* Images */
-  .dark img {
-    @apply brightness-90;
-  }
+    /* Animation */
+    * {
+        @apply transition-all ease-in-out duration-300;
+    }
 }
