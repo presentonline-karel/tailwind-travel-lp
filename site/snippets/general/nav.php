@@ -46,15 +46,15 @@
             </ul>
 
             <!-- Language + theme switch -->
-            <div class="Language-Theme-Switch / flex gap-12px items-center justify-center">
-                <div class="Language-Switch / flex gap-[6px] items-center font-headings font-semibold uppercase p-[10px] rounded-lg border-[0.4px] border-prim-200 bg-neutrals-100 / dark:border-prim-600 dark:bg-prim-600">
-                    <i class="fa fa-globe / h-16px text-prim-600 / dark:text-neutrals-100" aria-hidden="true"></i>
-                    <span class="text-16px leading-4 font-headings font-semibold relative top-2px text-prim-600 / dark:text-neutrals-100">EN</span>
+            <div class="Language-Theme-Switch / flex gap-12px items-center justify-center cursor-pointer">
+                <div class="Language-Switch / flex gap-[6px] items-center font-headings font-semibold uppercase p-[10px] rounded-lg border-[0.4px] border-prim-200 bg-neutrals-100 / dark:border-prim-600 dark:bg-prim-600 / lg:bg-prim-100 lg:border-none / xl:!text-20px xl:!leading-[20px]">
+                    <i class="fa fa-globe / h-16px text-prim-600 / dark:text-neutrals-100 / xl:h-20px" aria-hidden="true"></i>
+                    <span class="text-16px leading-4 font-headings font-semibold relative top-2px text-prim-600 / dark:text-neutrals-100 / lg:text-20px lg:leading-[20px]">EN</span>
                 </div>
 
-                <div class="Theme-Switch / p-[10px] rounded-lg border-[0.4px] border-prim-200 bg-neutrals-100 text-16px !leading-4 / dark:border-prim-600 dark:bg-prim-600 dark:text-neutrals-100">
-                    <i class="fa fa-moon-o Moon / !leading-4 text-prim-600 h-16px / dark:!hidden" aria-hidden="true"></i>
-                    <i class="fa fa-sun-o Sun / !leading-4 text-neutrals-100 h-16px !hidden / dark:!block" aria-hidden="true"></i>
+                <div class="Theme-Switch / p-[10px] rounded-lg border-[0.4px] border-prim-200 bg-neutrals-100 text-16px !leading-4 cursor-pointer / dark:border-prim-600 dark:bg-prim-600 dark:text-neutrals-100 / lg:bg-prim-100 lg:border-none lg:text-center lg:px-8px / xl:w-40px xl:h-40px">
+                    <i class="fa fa-moon-o Moon / !leading-4 text-prim-600 h-16px / dark:!hidden / lg:!text-20px lg:!w-20px lg:!leading-[20px]" aria-hidden="true"></i>
+                    <i class="fa fa-sun-o Sun / !leading-4 text-neutrals-100 h-16px !hidden / dark:!block / lg:!text-20px lg:!leading-[20px]" aria-hidden="true"></i>
                 </div>
 
                 <a href="#" class="Link / btn--primary hidden / lg:block">Get started</a>

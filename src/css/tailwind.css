@@ -16,11 +16,11 @@
     }
 
     .h1 {
-        @apply mb-20px text-40px;
+        @apply mb-20px text-40px xl:text-72px xl:mb-24px;
     }
 
     .h2 {
-        @apply mb-16px text-32px;
+        @apply mb-16px text-32px xl:text-56px xl:mb-24px;
     }
 
     .h3 {
@@ -37,7 +37,7 @@
 
     /* Paragraphs */
     .p {
-        @apply text-16px text-neutrals-900 font-paragraphs;
+        @apply text-16px text-neutrals-900 font-paragraphs xl:text-[18px] xl:leading-[28px];
     }
 
     .dark .p {
@@ -51,11 +51,11 @@
 
     /* Buttons */
     .btn--primary {
-        @apply py-12px px-16px bg-prim-600 text-neutrals-100 rounded-lg font-headings font-semibold;
+        @apply py-12px px-16px bg-prim-600 text-neutrals-100 rounded-lg font-headings font-semibold xl:text-20px xl:leading-[20px] xl:px-24px xl:py-16px;
     }
 
     .btn--secondary {
-        @apply py-12px px-16px bg-transparent text-prim-600 font-headings font-semibold;
+        @apply py-12px px-16px bg-transparent text-prim-600 font-headings font-semibold xl:text-20px xl:leading-[20px] xl:px-24px xl:py-16px;
     }
 
     .dark .btn--secondary {
@@ -72,7 +72,7 @@
 
     /* Section defaults */
     .section {
-        @apply py-72px bg-neutrals-100;
+        @apply py-72px bg-neutrals-100 xl:py-80px xl:py-120px;
     }
 
     .dark .section {
@@ -80,7 +80,7 @@
     }
 
     .section--colored {
-        @apply rounded-2xl border-y-[0.4px] border-neutrals-400 bg-neutrals-200;
+        @apply rounded-2xl border-y-[0.4px] border-neutrals-400 bg-neutrals-200 lg:py-80px xl:py-120px;
     }
 
     .dark .section--colored {
@@ -89,7 +89,7 @@
 
     /* Others */
     .section-label {
-        @apply mb-12px text-prim-500 text-14px font-headings;
+        @apply mb-12px text-prim-500 text-14px font-headings xl:text-[18px] xl:leading-[18px] xl:mb-24px;
     }
 
     .dark .section-label {
