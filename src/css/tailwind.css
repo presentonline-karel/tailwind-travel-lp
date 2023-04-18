@@ -24,11 +24,11 @@
     }
 
     .h3 {
-        @apply mb-16px text-24px;
+        @apply mb-16px text-24px xl:text-40px;
     }
 
     .h4 {
-        @apply mb-12px text-20px;
+        @apply mb-12px text-20px lg:text-24px;
     }
 
     .h5 {
@@ -51,11 +51,15 @@
 
     /* Buttons */
     .btn--primary {
-        @apply py-12px px-16px bg-prim-600 text-neutrals-100 rounded-lg font-headings font-semibold xl:text-20px xl:leading-[20px] xl:px-24px xl:py-16px;
+        @apply py-12px px-16px bg-prim-600 text-neutrals-100 rounded-lg font-headings font-semibold hover:bg-prim-700 xl:text-20px xl:leading-[20px] xl:px-24px xl:py-16px;
     }
 
     .btn--secondary {
         @apply py-12px px-16px bg-transparent text-prim-600 font-headings font-semibold xl:text-20px xl:leading-[20px] xl:px-24px xl:py-16px;
+    }
+
+    .btn--secondary:hover i {
+        @apply ml-12px;
     }
 
     .dark .btn--secondary {
@@ -63,16 +67,21 @@
     }
 
     .btn--white {
-        @apply bg-neutrals-100 text-prim-600 w-full;
+        @apply bg-neutrals-100 text-prim-600 w-full hover:bg-prim-100;
     }
 
     .dark .btn--white {
         @apply bg-prim-600 text-neutrals-100;
     }
 
+    /* Label links */
+    .Sec-Label-Link:hover i {
+        @apply !ml-12px;
+    }
+
     /* Section defaults */
     .section {
-        @apply py-72px bg-neutrals-100 xl:py-80px xl:py-120px;
+        @apply py-72px bg-neutrals-100 lg:py-80px xl:py-120px;
     }
 
     .dark .section {

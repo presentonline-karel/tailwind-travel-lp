@@ -19,7 +19,7 @@
                         </a>
 
                         <a href="#" class="Sec-Label-Link / bg-transparent py-8px px-12px font-semibold text-prim-600 text-16px leading-4 font-headings tracking-tighter / dark:text-neutrals-100 / xl:text-[18px] xl:leading-[18px] xl:px-16px xl:py-[10px]">
-                            find out more<i class="fa fa-chevron-right / !text-12px !ml-8px / dark:text-neutrals-100 / lg:text-prim-600 " aria-hidden="true"></i>
+                            find out more<i class="fa fa-chevron-right / !text-12px !ml-8px / dark:text-neutrals-100 / lg:text-prim-600" aria-hidden="true"></i>
                         </a>
                     </div>
 
@@ -110,15 +110,15 @@
         <!-- Faq section -->
         <div class="Faq / section section--colored">
             <div class="Container / px-24px / sm:px-48px / md:max-w-[792px] md:mx-auto">
-                <h2 class="h h2 / mb-40px / md:text-center">Frequently asked questions</h2>
+                <h2 class="h h2 / mb-40px / md:text-center / lg:mb-56px / xl:mb-80px">Frequently asked questions</h2>
 
-                <div class="Faq-Items / mb-40px / md:max-w-[588px] md:mx-auto">
+                <div class="Faq-Items / mb-40px / md:max-w-[588px] md:mx-auto / lg:mb-56px / xl:mb-80px">
                     <?php for ($i = 0; $i < 4; $i++): ?>
-                        <div class="Faq-Item / border-b border-neutrals-400 transition-all ease-in-out duration-300 / dark:border-neutrals-800">
-                            <div class="Faq-Header / flex justify-between items-center gap-16px py-16px relative">
-                                <h5 class="h h5 /">What actions happen after booking</h5>
-                                <i class="fa fa-minus / Minus / opacity-0 text-neutrals-1000 absolute right-0 transition-all ease-in-out duration-300 / dark:text-neutrals-100" aria-hidden="true"></i>
-                                <i class="fa fa-plus / Plus / text-neutrals-1000 absolute right-0 transition-all ease-in-out duration-300 / dark:text-neutrals-100" aria-hidden="true"></i>
+                        <div class="Faq-Item / border-b border-neutrals-400 transition-all ease-in-out duration-300 select-none / dark:border-neutrals-800">
+                            <div class="Faq-Header / flex justify-between items-center gap-16px py-16px relative cursor-pointer / xl:py-24px">
+                                <h5 class="h h5 / lg:text-24px / xl:text-32px">What actions happen after booking</h5>
+                                <i class="fa fa-minus / Minus / opacity-0 text-neutrals-1000 absolute right-0 transition-all ease-in-out duration-300 / dark:text-neutrals-100 / xl:!text-24px" aria-hidden="true"></i>
+                                <i class="fa fa-plus / Plus / text-neutrals-1000 absolute right-0 transition-all ease-in-out duration-300 / dark:text-neutrals-100 / xl:!text-24px" aria-hidden="true"></i>
                             </div>
 
                             <div class="Faq-Body / transition-all max-h-0 ease-in-out duration-300 overflow-hidden">
@@ -138,25 +138,25 @@
 
         <!-- CTA section -->
         <div class="CTA / section">
-            <div class="Container / flex flex-col gap-40px bg-prim-100 border border-prim-200 rounded-2xl shadow-card py-56px px-24px mx-24px / dark:bg-neutrals-900 dark:border-neutrals-800 / sm:mx-48px / md:flex-row md:px-56px md:items-center">
-                <div class="Image-Container / p-8px w-full aspect-square bg-prim-200 border border-prim-300 rounded-2xl shadow-card / dark:bg-neutrals-800 dark:border-neutrals-800 / md:h-min md:w-1/2">
+            <div class="Container / flex flex-col gap-40px bg-prim-100 border border-prim-200 rounded-2xl shadow-card py-56px px-24px mx-24px / dark:bg-neutrals-900 dark:border-neutrals-800 / sm:mx-48px / md:flex-row md:px-56px md:items-center / lg:mx-[96px] lg:gap-80px / xl:mx-auto xl:gap-[126px] xl:px-80px xl:py-80px xl:max-w-[1200px]">
+                <div class="Image-Container / p-8px w-full aspect-square bg-prim-200 border border-prim-300 rounded-2xl shadow-card / dark:bg-neutrals-800 dark:border-neutrals-800 / md:h-min md:w-1/2 md:max-w-[408px]">
                     <img src="../../assets/img/Travel-cta-img.webp" class="Image / aspect-square rounded-2xl object-cover" alt="" loading="lazy" />
                 </div>
 
                 <div class="Content / md:w-1/2">
-                    <div class="Header / mb-24px">
+                    <div class="Header / mb-24px / xl:mb-40px">
                         <div class="section-label">sign up</div>
-                        <h3 class="h h3">Sing up for your amazing holiday today!</h3>
+                        <h3 class="h h3 / xl:mb-24px">Sing up for your amazing holiday today!</h3>
                         <p class="p">Morbi sed pellentesque lectus. Nam varius risus metus, at pulvinar magna bibendum vitae. Aliquam auctor suscipit sem ut aliquet.</p>
                     </div>
 
-                    <ul class="List / flex flex-col gap-4px mb-32px">
+                    <ul class="List / flex flex-col gap-4px mb-32px / lg:grid lg:grid-cols-2 lg:gap-8px / xl:mb-40px">
                         <?php for ($i = 0; $i < 4; $i++): ?>
-                            <li class="List-Item / flex gap-8px items-center font-paragraphs text-neutrals-900 text-16px / dark:text-neutrals-300"><i class="fa fa-check-circle / text-prim-600 / dark:text-prim-300" aria-hidden="true"></i>Competitive holidays</li>
+                            <li class="List-Item / flex gap-8px items-center font-paragraphs text-neutrals-900 text-16px / dark:text-neutrals-300 / xl:text-[18px] xl:leading-[28px]"><i class="fa fa-check-circle / text-prim-600 / dark:text-prim-300" aria-hidden="true"></i>Competitive holidays</li>
                         <?php endfor; ?>
                     </ul>
 
-                    <div class="CTAs / flex items-center gap-8px">
+                    <div class="CTAs / flex items-center gap-8px / xl:gap-16px">
                         <a href="#" class="btn--primary">Sign up</a>
                         <a href="#" class="btn--secondary">More info<i class="fa fa-arrow-right / text-12px ml-8px" aria-hidden="true"></i></a>
                     </div>
